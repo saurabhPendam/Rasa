@@ -1,0 +1,16 @@
+version: "3.1"
+
+rules:
+  - rule: Handle bye intent
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Handle suicide intent
+    steps:
+      - intent: suicide
+      - action: action_emotion
+      - action: utter_suicide
+      - action: utter_suicide_concern
+
+  

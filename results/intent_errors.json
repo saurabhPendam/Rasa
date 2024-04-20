@@ -1,0 +1,26 @@
+[
+  {
+    "text": "yes 👍",
+    "intent": "casual",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5047276616096497
+    }
+  },
+  {
+    "text": "Am i depressed?",
+    "intent": "symptom_depression",
+    "intent_prediction": {
+      "name": "depressed",
+      "confidence": 0.6056088805198669
+    }
+  },
+  {
+    "text": "Am I depressed? 😔",
+    "intent": "symptom_depression",
+    "intent_prediction": {
+      "name": "depressed",
+      "confidence": 0.5763939023017883
+    }
+  }
+]
