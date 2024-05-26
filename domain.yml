@@ -753,7 +753,7 @@ responses:
     - text: "I'm sorry to hear that you're feeling down. It's okay to not be okay."
 
   utter_self_care_tips:
-    - text: "Self-care is important for your mental health. Have you tried activities like taking a walk, practicing mindfulness, or listening to music?"
+    - text: "Self-care is important for your mental health. Have you tried activities like taking a walk, practicing mindfulness, or listening to music?."
 
   utter_therapy_options:
     - text: "There are various types of therapy, including cognitive-behavioral therapy (CBT), dialectical behavior therapy (DBT), and psychotherapy. It's important to find a therapist who specializes in the approach that resonates with you."

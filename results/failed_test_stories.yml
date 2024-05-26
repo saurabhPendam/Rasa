@@ -1,1 +1,87 @@
-# None of the test stories failed - all good!
+version: "3.1"
+stories:
+- story: express anxious mood (.\tests\test_stories.yml)
+  steps:
+  - intent: anxious  # predicted: tired: Feeling nervous
+  - action: utter_anxious
+  - action: action_emotion
+- story: express anger (.\tests\test_stories.yml)
+  steps:
+  - intent: angry  # predicted: nlu_fallback: Feeling furious
+  - action: utter_angry
+  - action: action_emotion
+- story: express agreement (.\tests\test_stories.yml)
+  steps:
+  - intent: affirm  # predicted: nlu_fallback: Yes, exactly!
+  - action: utter_affirm
+  - action: action_emotion
+- story: express confusion (.\tests\test_stories.yml)
+  steps:
+  - intent: neutral_response  # predicted: nlu_fallback: I'm not sure
+  - action: utter_neutral_response
+  - action: action_emotion
+- story: express desire for help (.\tests\test_stories.yml)
+  steps:
+  - intent: help  # predicted: understand: Can you help me?
+  - action: utter_help
+  - action: action_emotion
+- story: express desire to learn more about mental health (.\tests\test_stories.yml)
+  steps:
+  - intent: learn_mental_health  # predicted: mental_health: Can you tell me more about mental health?
+  - action: utter_learn_mental_health
+  - action: action_emotion
+- story: express desire for self-care advice (.\tests\test_stories.yml)
+  steps:
+  - intent: self_care  # predicted: nlu_fallback: How can I take care of myself?
+  - action: utter_self_care
+  - action: action_emotion
+- story: express desire for additional information (.\tests\test_stories.yml)
+  steps:
+  - intent: default  # predicted: nlu_fallback: Tell me more about it.
+  - action: utter_default
+  - action: action_emotion
+- story: express dislike or frustration (.\tests\test_stories.yml)
+  steps:
+  - intent: hate_me  # predicted: nlu_fallback: I hate this!
+  - action: utter_hate_me
+  - action: action_emotion
+- story: express a desire to end the conversation (.\tests\test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: nlu_fallback: I have to go now.
+  - action: utter_goodbye
+  - action: action_emotion  # predicted: action_listen
+- story: express frustration with the bot (.\tests\test_stories.yml)
+  steps:
+  - intent: hate_you  # predicted: done: You're not helping at all.
+  - action: utter_hate_you
+  - action: action_emotion
+- story: inquire about the bot's location (.\tests\test_stories.yml)
+  steps:
+  - intent: location  # predicted: nlu_fallback: Where are you based?
+  - action: utter_location
+  - action: action_emotion
+- story: express interest in learning more about mental health (.\tests\test_stories.yml)
+  steps:
+  - intent: learn_mental_health  # predicted: mental_health: Can you teach me more about mental health?
+  - action: utter_learn_mental_health
+  - action: action_emotion
+- story: inquire about the bot's usefulness (.\tests\test_stories.yml)
+  steps:
+  - intent: MindLift_useful  # predicted: nlu_fallback: Have you been useful to others?
+  - action: utter_MindLift_useful
+  - action: action_emotion
+- story: inquire about types of depression (.\tests\test_stories.yml)
+  steps:
+  - intent: depression  # predicted: nlu_fallback: What are the different types of depression?
+  - action: utter_depression
+  - action: action_emotion
+- story: express positive mood (.\tests\test_stories.yml)
+  steps:
+  - intent: happy  # predicted: nlu_fallback: Feeling awesome!
+  - action: utter_happy
+  - action: action_emotion
+- story: express negative mood (.\tests\test_stories.yml)
+  steps:
+  - intent: sad  # predicted: nlu_fallback: Feeling terrible
+  - action: utter_sad
+  - action: action_emotion
